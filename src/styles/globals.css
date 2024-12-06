@@ -56,7 +56,7 @@ body {
     height: 100vh;
     inset: 0;
     margin: auto;
-    background: conic-gradient(from 0deg, #08f, #f60, #bbffa1, #4c00ff, #ab2666, #09f);
+    /*background: conic-gradient(from 0deg, #08f, #f60, #bbffa1, #4c00ff, #ab2666, #09f);*/
     animation: spinBlob 8s linear infinite;
 }
 
