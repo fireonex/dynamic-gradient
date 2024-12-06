@@ -36,7 +36,8 @@ export default function Home() {
                 return `rgb(${color.join(",")})`;
             });
 
-            setGradient(`${gradientColors.join(", ")}`);
+            // setGradient(`${gradientColors.join(", ")}`);
+            setGradient(`conic-gradient(from 0deg, ${gradientColors.join(", ")})`);
         }
     }, [colorPalette]);
 
@@ -65,7 +66,9 @@ export default function Home() {
             <div className="blob-outer-container">
                 <div className="blob-inner-container">
                     <div className="blob"
-                         style={{background: `conic-gradient(from 0deg, ${gradient})`}}></div>
+                         // style={{background: `conic-gradient(from 0deg, ${gradient})`}}
+                         style={{background: gradient}}
+                    ></div>
                 </div>
             </div>
 
